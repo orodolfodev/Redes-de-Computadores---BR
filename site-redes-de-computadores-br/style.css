@@ -4,10 +4,13 @@
     font-size: 30px;
     background-color: yellow;
     width: 500px;
-    padding: 20px;
+    padding: 40px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
+    
+
+
 
 }
 
@@ -76,4 +79,6 @@ p{
 .text3{
     text-align: justify;
     font-size: 18px;
+    padding: block;
+    text-align: center;
 }
