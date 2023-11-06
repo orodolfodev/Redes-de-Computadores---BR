@@ -1,21 +1,30 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family:'Bypass3D';
-    src: url('Fontes/Bypass3D.ttf') format('opentype');
+    font-family:'heroworship';
+    src: url('Fontes/heroworship.ttf') format('opentype');
     font-weight: normal;
 }
 
 
 :root {
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-Bypass3D:'Bypass3D', cursive;
+    --fonte-heroworship:'heroworship', cursive; 
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 header > h1{
-    font-family:var(--fonte-Bypass3D);
-    font-size: 50px;
-
+    font-family:var(--fonte-heroworship);
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 0px white;
+    
+    
 }
 
 
@@ -24,20 +33,39 @@ body{
     background-color: #38569E;
     margin: 0px;
     
+    
+}
+
+p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    
+}
+
+main strong{
+    color:white;
+    font-weight: bold;
+    background-color:#38569E;
+    padding: 2px 6px;
 }
 
 #sub{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.4em;
     font-style: italic;
     font-weight: bold;
-    text-align:left
+    text-align:center;
+    text-shadow: 1px 1px 0px white;
 }
     
  header{
     background-color: yellow;
     padding: 10px;
     margin: 10px;
+    min-height: 150px;
     border-radius: 10px 0px;
     box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
  } 
@@ -45,26 +73,44 @@ body{
  nav{
     background-color: #38569E;
     padding: 3px;
+    margin-top: 3%;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
  }
 
  nav > a{
     text-decoration: none;
-    color: white;
+    color: black;
+    border-radius: 3px;
     font-weight: bold;
     margin-right: 30px;
+    transition-duration: 0.5s;
  }
 
  nav > a:hover{
     text-decoration: underline;
+    background-color: yellow;
  }
     
 main{
+   
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
     background-color: yellow;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px 0px;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
+}
+
+main img{
+    width: 100%;
+
+}
+
+a > img{
+    width: 5%;
 }
 
 footer{
@@ -77,6 +123,7 @@ footer{
 
 footer > p{
     margin: 0px;
+    text-align: center;
 }
 article{
     background-color: lightgray;
@@ -91,4 +138,6 @@ a{
     text-decoration: none;
     font-weight: bold;
     color: black;
+    
+
 }
