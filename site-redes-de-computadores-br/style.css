@@ -4,13 +4,24 @@
     font-family:'heroworship';
     src: url('Fontes/heroworship.ttf') format('opentype');
     font-weight: normal;
+    
+}
+
+@font-face {
+    font-family:'Magenta';
+    src:url('Magenta.ttf') format('opentype');
+    font-weight: normal;
 }
 
 
 :root {
+    --cor0: #38569E;
+    --cor1: yellow;
+    --cor2: white;
+    --cor3: black;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-heroworship:'heroworship', cursive; 
-    
+    --fonte-destaque:'heroworship', cursive; 
+    --fonte-Magenta: 'Magenta', cursive;
 }
 
 * {
@@ -27,6 +38,12 @@ header > h1{
     
 }
 
+main h2{
+    font-family:var(--fonte-Magenta);
+    color:blue;
+    
+}
+
 
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -36,7 +53,7 @@ body{
     
 }
 
-p{
+main p{
     margin: 15px 0px;
     text-align: justify;
     text-indent: 30px;
@@ -46,11 +63,19 @@ p{
 }
 
 main strong{
-    color:white;
+    color: blue;
     font-weight: bold;
-    background-color:#38569E;
+    
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #38569E;
     padding: 2px 6px;
 }
+
 
 #sub{
     font-family:Arial, Helvetica, sans-serif;
