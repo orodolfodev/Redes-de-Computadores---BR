@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face {
-    font-family:'heroworship';
+    font-family: "Poppins", sans-serif;
     src: url('Fontes/heroworship.ttf') format('opentype');
     font-weight: normal;
     
@@ -16,14 +16,34 @@
     --cor2: white;
     --cor3: black;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque:'heroworship', cursive; 
+    --fonte-destaque:"Poppins", sans-serif;
     --fonte-destaque2:'Bebas Neue', cursive;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
 }
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+header{
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+    min-height: 150px;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+ } 
+ 
 
 header > h1{
     font-family:var(--fonte-destaque);
@@ -33,6 +53,36 @@ header > h1{
     
     
 }
+
+
+nav{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #38569E;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+ }
+
+ .ul  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul a{
+    font-size: 18px;
+    color: #fff;
+    
+
+}
+
+ul a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+ }
 
 main h2{
     font-family:var(--fonte-destaque2);
@@ -95,42 +145,15 @@ main a{
 
 #sub{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-style: italic;
     font-weight: bold;
     text-align:center;
     text-shadow: 1px 1px 0px white;
 }
     
- header{
-    background-color: yellow;
-    padding: 10px;
-    margin: 10px;
-    min-height: 150px;
-    border-radius: 10px 0px;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
- } 
  
- nav{
-    background-color: #38569E;
-    padding: 3px;
-    margin-top: 3%;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
- }
 
- nav > a{
-    text-decoration: none;
-    color: black;
-    border-radius: 3px;
-    font-weight: bold;
-    margin-right: 30px;
-    transition-duration: 0.5s;
- }
-
- nav > a:hover{
-    text-decoration: underline;
-    background-color: white;
- }
     
 main{
    
@@ -148,25 +171,6 @@ main{
 main img{
     width: 100%;
 
-}
-
-
-footer{
-    background-color: rgb(34, 34, 196);
-    color: white;
-    text-align: center;
-    padding: 3px;
-    margin: 0px;
-    font-size: 15px;
-}
-
-footer > p > a > img{
-    margin: 0px;
-    text-align: center;
-    font-size: 0.8em;
-    color: white;
-    height: 30px;
-    width: 30px;
 }
 
 
@@ -228,4 +232,79 @@ div.video > iframe{
     width: 90%;
     height: 90%;
 }
+
+
+footer{
+    background-color: rgb(34, 34, 196);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+
+.newaletter{
+    padding: 15px;
+    margin-right: 15px;
+    font-family: var(--fonte-destaque);
+}
+
+.input-group input, placeholder{
+    padding-bottom: 5px;
+    font-size: 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 2px solid yellow;
+}
+
+footer{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+.site{
+    background-color: yellow;
+    color: #000;
+    text-align: center;
+    padding: 3px;
+}
+.newaletter hr{
+    width: 100%;
+    height: 1px;
+    padding: 0.5px;
+    gap: 10px;
+    background-color: #000;
+    border: none;
+}
+
+button{
+    width: 80px;
+    height: 26px;
+    border: none;
+    border-radius: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+input:hover{
+    background-color: #ccc0c0;
+}
+
+i{
+    font-size: 25px;
+    color: #fff;
+    padding: 10px
+}
+
+i:hover{
+    color: #000;
+}
+
+
+
 
